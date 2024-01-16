@@ -16,10 +16,11 @@ return new class extends Migration
             $table->foreignId('post_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->integer('number');
             $table->text('question');
-            $table->text('correct_option');
+            $table->text('first_option');
             $table->text('second_option');
             $table->text('third_option');
             $table->text('fourth_option');
+            $table->enum('correct_option', ['1', '2', '3', '4']);
             $table->timestamps();
         });
     }
