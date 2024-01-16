@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('class_subjects', function (Blueprint $table) {
+        Schema::create('learning_groups', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('class_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->foreignId('subject_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->enum('grade', ['x', 'xi', 'xii', 'xiii']);
+            $table->foreignId('major_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->integer('serial');
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('class_subjects');
+        Schema::dropIfExists('classs');
     }
 };

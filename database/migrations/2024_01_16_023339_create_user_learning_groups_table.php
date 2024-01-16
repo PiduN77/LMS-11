@@ -11,11 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('classs', function (Blueprint $table) {
+        Schema::create('user_learning_groups', function (Blueprint $table) {
             $table->id();
-            $table->enum('grade', ['x', 'xi', 'xii', 'xiii']);
-            $table->foreignId('major_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->integer('serial');
+            $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('learning_group_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('classs');
+        Schema::dropIfExists('user_classs');
     }
 };

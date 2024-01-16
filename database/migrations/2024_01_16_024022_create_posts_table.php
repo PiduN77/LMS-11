@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->foreignId('class_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('learning_group_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('subject_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('title');
             $table->enum('type', ['quiz', 'test', 'assignment', 'material']);
