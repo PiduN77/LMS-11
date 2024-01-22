@@ -21,3 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/teacher-dashboard', [App\Http\Controllers\TeacherController::class, 'index'])->name('TeacherDashboard');
+Route::get('/view-tugas', [App\Http\Controllers\usercontroller2::class, 'view_tugas'])->name('ViewTugas');
+Route::get('/pengerjaan-quiz', [App\Http\Controllers\usercontroller2::class, 'pengerjaan_quiz'])->name('PengerjaanQuiz');
