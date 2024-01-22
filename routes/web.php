@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/teacher-dashboard', [App\Http\Controllers\TeacherController::class, 'index'])->name('TeacherDashboard');
+Route::get('/user-dashboard', [App\Http\Controllers\UserController::class, 'index'])->name('UserDashboard');
