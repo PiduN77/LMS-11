@@ -46,8 +46,6 @@
             @include('layouts.navbar_v2')
           <!-- partial -->
           <div class="main-panel">
-            <div class="content-wrapper">
-
                     @yield('content')
 
 
