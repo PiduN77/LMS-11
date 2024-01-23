@@ -20,16 +20,18 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body style="background-color: white">
+<body style="background-image:url({{ asset('assets/images/bg.png') }});">
     <main class="py-4 h-100 position-absolute">
         <div class="container h-100">
             <div class="row d-flex align-items-center h-100">
                 <div class="col-md-8">
-                    <img class="w-100" src="{{ asset('assets/images/school.png') }}" alt="">
+                    <img class="w-100" src="{{ asset('assets/images/login.png') }}" alt="">
                 </div>
                 <div class="col-md-4">
                     <div class="card" style="background-color: #E4DEDB">
-                        <div class="card-header" style="background-color: #B7CDF5"></div>
+                        <div class="card-header" style="background-color: #0E1A69">
+                            <p class="fw-normal" style="-webkit-text-fill-color: #E4DEDB">Logo</p>
+                        </div>
                         <div class="card-body">
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
@@ -83,7 +85,8 @@
 
                                 <div class="row mb-0">
                                     <div class="col-md-8 offset-md-4">
-                                        <button type="submit" class="btn btn-primary" style="background-color: #0E1A69">
+                                        <button type="submit" class="btn btn-primary"
+                                            style="background-color: #0E1A69">
                                             {{ __('Login') }}
                                         </button>
 
