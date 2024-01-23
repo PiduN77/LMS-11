@@ -46,7 +46,7 @@
             @include('layouts.navbar_v2')
           <!-- partial -->
           <div class="main-panel">
-            <div class="content-wrapper">
+            <div class="content-wrapper" style="background-color: #B7CDF5">
               <div class="row">
                 <div class="col-12 grid-margin stretch-card">
                     @yield('content')
