@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.tenplate')
 
 @section('content')
 <div class="container">
