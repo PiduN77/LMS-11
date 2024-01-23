@@ -13,8 +13,8 @@
                         <span class="count bg-success"></span>
                     </div>
                     <div class="profile-name">
-                        <h5 class="mb-0 font-weight-normal">Nama Guru</h5>
-                        <span>Guru</span>
+                        <h5 class="mb-0 font-weight-normal">Mimin</h5>
+                        <span>admin</span>
                     </div>
                 </div>
                 <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -47,45 +47,73 @@
         <li class="nav-item nav-category">
             <span class="nav-link">Navigation</span>
         </li>
-        <li class="nav-item menu-items active">
-            <a class="nav-link" href="index.html">
+        <li class="nav-item menu-items">
+            <a class="nav-link text-white" href="">
                 <span class="menu-icon">
                     <i class="mdi mdi-speedometer"></i>
                 </span>
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
-                <span class="menu-icon">
-                    <i class="mdi mdi-playlist-play"></i>
-                </span>
-                <span class="menu-title">Kelas</span>
-            </a>
+        <li class="nav-item nav-category">
+            <span class="nav-link">Data</span>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/tables/basic-table.html">
-                <span class="menu-icon">
-                    <i class="mdi mdi-table-large"></i>
-                </span>
-                <span class="menu-title">Jadwal</span>
-            </a>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/charts/chartjs.html">
-                <span class="menu-icon">
-                    <i class="mdi mdi-chart-bar"></i>
-                </span>
-                <span class="menu-title">Upload Tugas</span>
-            </a>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/icons/mdi.html">
-                <span class="menu-icon">
-                    <i class="mdi mdi-contacts"></i>
-                </span>
-                <span class="menu-title">Icons</span>
-            </a>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item bg-transparent border-0">
+                    <h2 class="accordion-header nav-link ps-0">
+                        <button class="accordion-button text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-speedometer"></i>
+                            </span>
+                            <span class="menu-title">Tabel Data</span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-white">
+                            <a href="" class="nav-link">
+                                <span class=""> - User </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Subject </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Teacher Subject </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Major </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Learning Group </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - User Learning Group </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Learning Group Subject </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Post </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Question </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Answer </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - File </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Mark </span>
+                            </a>
+                            <a href="" class="nav-link">
+                                <span class=""> - Year </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </li>
     </ul>
 </nav>

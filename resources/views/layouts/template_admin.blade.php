@@ -32,11 +32,11 @@
 <body>
     <div class="container-scroller">
         <!-- partial:partials/_sidebar.html -->
-        @include('layouts.sidebar')
+        @include('layouts.sidebar_admin')
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
           <!-- partial:partials/_navbar.html -->
-            @include('layouts.navbar_v2')
+            @include('layouts.navbar_admin')
           <!-- partial -->
           <div class="main-panel">
             <div class="content-wrapper">
