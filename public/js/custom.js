@@ -28,6 +28,7 @@ function input(type, label, fk, fkn) {
     var res1 = document.createElement("input");
     var lab1 = document.createElement("label");
     lab1.innerHTML = label;
+    lab1.classList.add("text-white");
     document.getElementById("add").insertBefore(lab1, document.getElementById("add").lastElementChild);
     if(type.includes("bigint unsigned") || type.includes("enum")) {
         res1 = document.createElement("select");
@@ -60,7 +61,7 @@ function input(type, label, fk, fkn) {
         res1.type = "datetime-local";
         
     }
-    res1.classList.add("form-control", "mb-2");
+    res1.classList.add("form-control", "mb-2", "bg-white", "text-dark");
     res1.setAttribute("name", label);
     res1.required = true;
     document.getElementById("add").insertBefore(res1, document.getElementById("add").lastElementChild);
@@ -83,6 +84,7 @@ function input(type, label, fk, fkn) {
     }
     var res2 = res1.cloneNode(true);
     res2.disabled = true;
+    res2.classList.remove("bg-white");
     var lab2 = lab1.cloneNode(true);
     document.getElementById("edit").insertBefore(lab2, document.getElementById("edit").lastElementChild);
     document.getElementById("edit").insertBefore(res2, document.getElementById("edit").lastElementChild);

@@ -9,7 +9,7 @@ class LearningGroupSubject extends Model
 {
     use HasFactory;
 
-    protected $table = 'learning_group_subject';
+    protected $table = 'learning_group_subjects';
 
     protected $fillable = [
         'learning_group_id',

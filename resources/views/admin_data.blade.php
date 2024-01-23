@@ -9,21 +9,21 @@
     <h1 class="mt-4">Data Table - {{$class}}</h1>
     <div class="card mb-4">
         <div class="card-header text-white">
-            <i class="fas fa-table me-1"></i>
+            <span class="mdi mdi-table"></span>
             Data
         </div>
         <div class="card-body">
             <div class="form-outline">
-                <input type="search" id="datasearch" class="form-control" placeholder="Cari Data" maxlength="255" onchange="search()" />
+                <input type="search" id="datasearch" class="form-control bg-white" placeholder="Cari Data" maxlength="255" onchange="search()" />
             </div>
             <div style="max-height:300px;overflow:auto;">
-                <table class="table font-monospace" id="datatable">
+                <table class="table table-dark table-bordered font-monospace" id="datatable">
                     <thead>
                         <tr>
                             @for($i=0;$i<count($desc);$i++)
-                                <th scope="col">{{$desc[$i]->Field}}</th>
+                                <th class="text-white" scope="col"><b>{{$desc[$i]->Field}}</b></th>
                             @endfor
-                            <th scope="col">Aksi</th>
+                            <th class="text-white" scope="col"><b>Aksi</b></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -76,8 +76,8 @@
     <div class="row">
         <div class="col-xl-6">
             <div class="card mb-4">
-                <div class="card-header">
-                    <i class="fa fa-plus-square-o me-1"></i>
+                <div class="card-header text-white">
+                    <span class="mdi mdi-plus-box"></span>
                     Tambah
                 </div>
                 <div class="card-body">
@@ -94,8 +94,8 @@
         </div>
         <div class="col-xl-6">
             <div class="card mb-4">
-                <div class="card-header">
-                    <i class="fa fa-wrench me-1"></i>
+                <div class="card-header text-white">
+                    <span class="mdi mdi-pencil-box"></span>
                     Edit
                 </div>
                 <div class="card-body">

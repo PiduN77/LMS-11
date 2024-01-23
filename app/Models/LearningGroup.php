@@ -9,7 +9,7 @@ class LearningGroup extends Model
 {
     use HasFactory;
 
-    protected $table = 'learning_group';
+    protected $table = 'learning_groups';
 
     protected $fillable = [
         'grade',

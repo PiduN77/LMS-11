@@ -1,15 +1,14 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
-        <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg"
-                alt="logo"></a>
+        <a class="sidebar-brand brand-logo" href="index.html"><img src="{{ asset('assets/images/logo.svg') }}" alt="logo"></a>
+        <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="{{ asset('assets/images/logo-mini.svg') }}"alt="logo"></a>
     </div>
     <ul class="nav">
         <li class="nav-item profile">
             <div class="profile-desc">
                 <div class="profile-pic">
                     <div class="count-indicator">
-                        <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg" alt="">
+                        <img class="img-xs rounded-circle " src="{{ asset('assets/images/faces/face15.jpg') }}" alt="">
                         <span class="count bg-success"></span>
                     </div>
                     <div class="profile-name">
@@ -48,7 +47,7 @@
             <span class="nav-link">Navigation</span>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link text-white" href="">
+            <a class="nav-link" href="{{ route('Admin') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-speedometer"></i>
                 </span>
@@ -56,64 +55,111 @@
             </a>
         </li>
         <li class="nav-item nav-category">
-            <span class="nav-link">Data</span>
+            <span class="nav-link">Data Table</span>
         </li>
         <li class="nav-item menu-items">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item bg-transparent border-0">
-                    <h2 class="accordion-header nav-link ps-0">
-                        <button class="accordion-button text-white bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <span class="menu-icon">
-                                <i class="mdi mdi-speedometer"></i>
-                            </span>
-                            <span class="menu-title">Tabel Data</span>
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body text-white">
-                            <a href="{{ route('AdminTable', "User") }}" class="nav-link">
-                                <span> - User </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Subject </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Teacher Subject </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Major </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Learning Group </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - User Learning Group </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Learning Group Subject </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Post </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Question </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Answer </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - File </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Mark </span>
-                            </a>
-                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
-                                <span> - Year </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a class="nav-link" href="{{ route('AdminTable', "User") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">User</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Subject") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Subject</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Teacher_Subject") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Teacher_Subject</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Major") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Major</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Learning_Group") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Learning_Group</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "User_Learning_Group") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">User_Learning_Group</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Learning_Group_Subject") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title text-truncate">Learning_Group_Subject</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Post") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Post</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Question") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Question</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Answer") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Answer</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "File") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">File</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Mark") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Mark</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('AdminTable', "Year") }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-speedometer"></i>
+                </span>
+                <span class="menu-title">Year</span>
+            </a>
         </li>
     </ul>
 </nav>

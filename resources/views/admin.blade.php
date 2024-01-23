@@ -5,7 +5,5 @@
 @endsection
 
 @section('content')
-@endsection
-
-@section('script')
+    <p>Hello</p>
 @endsection

@@ -16,7 +16,7 @@ class AdminController extends Controller
     public function datatable($class)
     {
         $fk = array(
-            "Answer"=>array(),
+            "Answer"=>array("User", "Post"),
             "File"=>array("User"),
             "Learning_Group"=>array("Major"),
             "Learning_Group_Subject"=>array("Learning_Group", "Subject"),
@@ -35,7 +35,7 @@ class AdminController extends Controller
         for($i=0;$i<count($fk[$class]);$i++) {
             $dir2 = "\\App\\Models\\".str_replace("_", "", $fk[$class][$i]);
             $fks[$fk[$class][$i]] = $dir2::all();
-            $q = "DESCRIBE ".$fk[$class][$i];
+            $q = "DESCRIBE ".$fk[$class][$i]."s";
             $colname[$fk[$class][$i]] = DB::select($q);
         }
         if(!isset($fks)) {
