@@ -71,44 +71,44 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body text-white">
-                            <a href="" class="nav-link">
-                                <span class=""> - User </span>
+                            <a href="{{ route('AdminTable', "User") }}" class="nav-link">
+                                <span> - User </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Subject </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Subject </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Teacher Subject </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Teacher Subject </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Major </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Major </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Learning Group </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Learning Group </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - User Learning Group </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - User Learning Group </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Learning Group Subject </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Learning Group Subject </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Post </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Post </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Question </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Question </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Answer </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Answer </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - File </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - File </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Mark </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Mark </span>
                             </a>
-                            <a href="" class="nav-link">
-                                <span class=""> - Year </span>
+                            <a href="{{ route('AdminTable', "") }}" class="nav-link">
+                                <span> - Year </span>
                             </a>
                         </div>
                     </div>
