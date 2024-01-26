@@ -10,7 +10,6 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @yield('title')
-    <link rel="stylesheet" href="{{ asset('style/style.css') }}">
 
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('assets') }}/vendors/mdi/css/materialdesignicons.min.css">
@@ -34,6 +33,7 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <link rel="stylesheet" href="{{ asset('style') }}/style2.css">
 </head>
 
 <body>
@@ -46,16 +46,12 @@
             @include('layouts.navbar_v2')
           <!-- partial -->
           <div class="main-panel">
-                    @yield('content')
 
-
-            </div>
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
-            <footer class="footer">
+            <footer class="footer" style="background: #EDF2F9;">
               <div class="d-sm-flex justify-content-center justify-content-sm-between">
                 <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
               </div>
             </footer>
             <!-- partial -->
