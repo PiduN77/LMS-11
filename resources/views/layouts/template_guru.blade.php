@@ -46,9 +46,7 @@
             @include('layouts.navbar_v2')
           <!-- partial -->
           <div class="main-panel">
-            <div class="content-wrapper" style="background: #EDF2F9;">
-                    @yield('content')
-            </div>
+
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
             <footer class="footer" style="background: #EDF2F9;">
@@ -62,9 +60,6 @@
         </div>
         <!-- page-body-wrapper ends -->
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
     <script src="{{ asset('js/custom.js') }}"></script>
 
     <!-- plugins:js -->
@@ -87,6 +82,8 @@
     <!-- Custom js for this page -->
     <script src="{{asset('assets')}}/js/dashboard.js"></script>
     <!-- End custom js for this page -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
