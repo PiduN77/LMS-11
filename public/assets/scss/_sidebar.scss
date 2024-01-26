@@ -2,7 +2,7 @@
 
 .sidebar {
   min-height: calc(100vh - #{$navbar-height});
-  background: $sidebar-dark-bg;
+  background: #fff;
   font-weight: normal;
   padding: 0;
   width: $sidebar-width-lg;
@@ -134,13 +134,13 @@
 
       &.active {
         > .nav-link {
-          background: $sidebar-dark-menu-active-bg;
+          background: #0E1A69;
           position: relative;
           &:before {
             content: "";
             width: 3px;
             height: 100%;
-            background: theme-color(primary);
+            background: #0E1A69;
             display: inline-block;
             position: absolute;
             left: 0;
